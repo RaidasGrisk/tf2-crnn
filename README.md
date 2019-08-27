@@ -1,4 +1,4 @@
-# TF 2 CRNN
+# TF-2 CRNN
 
 The project code is written as simply as I could. This is to make it easy to understand and debug. Also to get to know the tf2 keras module better.
 
