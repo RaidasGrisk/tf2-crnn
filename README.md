@@ -1,4 +1,4 @@
-# TF 2 CRNN
+# TF-2 CRNN
 
 The project code is written as simply as I could. This is to make it easy to understand and debug. Also to get to know the tf2 keras module better.
 
@@ -8,5 +8,5 @@ The project code is written as simply as I could. This is to make it easy to und
 4. [**Utils.**](/utils.py) All the utility functions used.
 
 # TODO
-1. pre-train the model on more data
-2. show the results
+- [ ] pre-train the model on more data
+- [ ] illustrate the results
