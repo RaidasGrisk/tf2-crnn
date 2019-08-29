@@ -71,6 +71,8 @@ def data_generator(batches=1,
 
                 # get x
                 image = cv2.imread(data_path + image_path.replace('./', ''), 0)
+                if image is None:
+                    continue
                 x = preprocess_input_image(image)
 
                 # get y
