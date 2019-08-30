@@ -1,6 +1,6 @@
 # TF-2 CRNN
 
-CNN + RNN for Scene Text Recognition implemented using tf2 keras module. Mostly based on [this](https://github.com/Belval/CRNN/blob/master/CRNN/crnn.py) and [this](https://github.com/MaybeShewill-CV/CRNN_Tensorflow) repo. The project code is written as simply as I could. This is to make it easy to understand and debug. Also to get to know the tf2 keras module better.
+CNN + RNN for Scene Text Recognition implemented using tf2 keras module. Mostly based on [this](https://github.com/Belval/CRNN) and [this](https://github.com/MaybeShewill-CV/CRNN_Tensorflow) repo. The project code is written as simply as I could. This is to make it easy to understand and debug. Also to get to know the tf2 keras module better.
 
 Project structure:
 1. [**Model.**](/crnn_model.py) The model definition and architecture.
