@@ -60,12 +60,14 @@ def data_generator(batches=1,
                    batch_size=2,
                    epochs=1,
                    char_dict=char_dict,
-                   data_path='D:/data/mnt/ramdisk/max/90kDICT32px/'):
+                   data_path='D:/data/mnt/ramdisk/max/90kDICT32px/',
+                   dataset='train'  # training, testing or validation dataset
+                   ):
 
     x_batch = []
     y_batch = []
     for _ in range(epochs):
-        with open(data_path + 'annotation_train.txt') as fp:
+        with open(data_path + 'annotation_{}.txt'.format(dataset)) as fp:
             for _ in range(batches * batch_size):
                 image_path = fp.readline().replace('\n', '').split(' ')[0]
 
