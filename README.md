@@ -10,6 +10,10 @@ Project structure:
 
 # Results
 
+Loss of the pre-trained model.
+
+<img src="Figure_1.png" width="230" height="200"/>
+
 Some examples of pre-trained model at work.
 
 | image | recognition |
@@ -25,4 +29,4 @@ Some examples of pre-trained model at work.
 
 # TODO
 - [x] pre-train the model on more data
-- [ ] visualize training progress
+- [x] visualize training progress
