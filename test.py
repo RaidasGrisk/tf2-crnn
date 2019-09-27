@@ -29,6 +29,11 @@ decoded, log_prob = tf.nn.ctc_greedy_decoder(logits.numpy().transpose((1, 0, 2))
                                              sequence_length=[params['SEQ_LENGTH']] * x.shape[0],
                                              merge_repeated=True)
 decoded = tf.sparse.to_dense(decoded[0]).numpy()
-print([decode_to_text(char_dict, [j for j in i if j != 0]) for i in decoded])
 
+# at this point decoded array contains indices of chars for every word [WORD, CHAR_IDS]
+# an id of 0 defines the first char in char_dict. Also, because tf.sparse.to_dense returns zero-padded array
+# 0 does not mean anything at all if it is at the end of the array.
+# the best solution to this would be to use 0 as a blank index.
+# I have not done this, so when decoding the traling 0s in every word vec are trimmed
+print([decode_to_text(char_dict, [char for char in np.trim_zeros(word, 'b')]) for word in decoded])
 
